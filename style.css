@@ -1,0 +1,140 @@
+/* Miami Vice style CSS */
+    /* Color palette */
+    :root{
+      --miami-pink: #ff7bb3;
+      --miami-orange: #ffb86b;
+      --miami-cyan: #00c9b7;
+      --miami-teal: #0fb5a3;
+      --miami-yellow: #ffd27a;
+      --bg-tex: #022b3a;
+      --glass: rgba(255,255,255,0.85);
+    }
+
+    /* Reset & base */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #073642;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      background: linear-gradient(180deg, #b2f7ef 0%, #b9f3dd 20%, #fff3d1 60%);
+      line-height:1.5;
+    }
+
+    /* Container */
+    .container{max-width:1150px;margin:0 auto;padding:0 24px;}
+
+    /* NAV */
+    header{
+      position:sticky;top:0;z-index:30;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(90deg, rgba(255,255,255,0.85), rgba(255,255,255,0.65));
+      box-shadow: 0 6px 20px rgba(6,20,30,0.08);
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;padding:18px 0;
+    }
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{
+      width:52px;height:52px;border-radius:10px;
+      background: linear-gradient(180deg,var(--miami-pink),var(--miami-orange));
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    .brand h1{font-family:"Playfair Display";font-size:18px;color:#082f2d}
+    nav ul{display:flex;gap:18px;align-items:center;list-style:none}
+    nav a{color:#073642;text-decoration:none;font-weight:600}
+    .cta-btn{padding:10px 16px;border-radius:999px;background:linear-gradient(90deg,var(--miami-pink),var(--miami-orange));color:white;font-weight:700;box-shadow:0 8px 18px rgba(255,123,179,0.18)}
+
+    /* Mobile nav toggle */
+    .nav-toggle{display:none;border:none;background:none;font-size:20px}
+
+    /* HERO */
+    .hero{
+      min-height:70vh;display:grid;grid-template-columns:1fr 420px;align-items:center;gap:30px;padding:48px 0;
+      position:relative;
+    }
+    .hero-left{padding: right 0;}
+    .eyebrow{display:inline-block;background:rgba(255,255,255,0.7);padding:6px 10px;border-radius:999px;font-weight:700;color:#09312f;margin-bottom:14px}
+    .hero-title{font-family:"Playfair Display";font-size:44px;color:#052f2e;line-height:1.02;margin-bottom:14px}
+    .hero-sub{font-size:16px;color:#073642;opacity:.9;max-width:720px;margin-bottom:18px}
+    .hero-actions{display:flex;gap:12px;align-items:center}
+
+    /* Right card with art-deco illustration (SVG) */
+    .hero-card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.7));
+      border-radius:18px;padding:28px;box-shadow:0 18px 40px rgba(6,20,30,0.12);
+    }
+    .hero-art{height:320px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:12px;background:linear-gradient(180deg,#00c9b7,#ffb86b)}
+    /* small info row */
+    .info-row{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .chip{background:rgba(255,255,255,0.9);padding:8px 12px;border-radius:999px;font-weight:600}
+
+    /* Sections */
+    section{padding:64px 0}
+    h2.section-heading{font-size:28px;color:#082f2d;margin-bottom:12px}
+    p.lead{color:#073642;opacity:.95;max-width:840px}
+
+    /* About grid */
+    .about-grid{display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start;margin-top:18px}
+    .avatar{
+      width:100%;height:320px;border-radius:14px;background:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.35), transparent 20%),
+      linear-gradient(180deg,var(--miami-pink),var(--miami-orange));
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:28px;box-shadow:0 14px 36px rgba(6,20,30,0.12)
+    }
+    .about-text{padding:10px 6px}
+
+    /* Services cards */
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .service-card{background:white;border-radius:12px;padding:18px;box-shadow:0 10px 28px rgba(6,20,30,0.06);min-height:110px}
+    .service-card h4{margin-bottom:8px;color:#073642}
+
+    /* Portfolio */
+    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .port-item{border-radius:10px;min-height:160px;background:#f6f3f0;overflow:hidden;display:flex;align-items:flex-end;padding:12px;color:#062e2b;font-weight:700}
+
+    /* Testimonials simple */
+    .testimonials{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+    .test{background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(6,20,30,0.06)}
+
+    /* Blog preview */
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .post{background:white;border-radius:10px;padding:12px;box-shadow:0 8px 20px rgba(6,20,30,0.06)}
+
+    /* Contact form */
+    .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .form-control{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+    input,textarea{padding:12px;border-radius:8px;border:1px solid rgba(6,20,30,0.06);font-size:15px}
+    button.primary{padding:12px 16px;border-radius:999px;border:none;background:linear-gradient(90deg,var(--miami-pink),var(--miami-orange));color:white;font-weight:800;cursor:pointer}
+
+    footer{padding:28px 0;color:#073642}
+
+    /* Decorative palms (absolute) */
+    .palm-left, .palm-right{
+      position:absolute;bottom:0;opacity:.95;pointer-events:none;mix-blend-mode:multiply;
+    }
+    .palm-left{left:-40px;width:240px;transform:scaleX(-1) translateY(14px)}
+    .palm-right{right:-30px;width:260px;transform:translateY(30px)}
+
+    /* Responsive */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr;gap:18px}
+      .about-grid{grid-template-columns:1fr}
+      .services{grid-template-columns:repeat(2,1fr)}
+      .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+      .blog-grid{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+      nav ul{display:none}
+      .nav-toggle{display:block}
+      .hero-card{order:2}
+      .avatar{height:240px}
+    }
+    @media (max-width:520px){
+      .hero-title{font-size:32px}
+      .brand h1{font-size:16px}
+      .services{grid-template-columns:1fr}
+      .portfolio-grid{grid-template-columns:1fr}
+      .testimonials{grid-template-columns:1fr}
+    }

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shyam's Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="JavaScript" href="script.js" />  
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1>Professional Portfolio</h1>
+          <div style="font-size:12px;color:#0a3b37;font-weight:600">Official Page</div>
+        </div>
+      </div>
+
+      <nav>
+        <button class="nav-toggle" aria-label="menu" id="navToggle">☰</button>
+        <ul id="navList">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">My hobbs & interests</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex;gap:12px;align-items:center">
+        <a class="cta-btn" href="#portfolio">See Work</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="container">
+    <section id="home" class="hero" aria-label="hero">
+      <div class="hero-left">
+        <span class="eyebrow">Hi, I'm Shyam</span>
+        <h2 class="hero-title">Professional & Specialization— Gen AI Engineer</h2>
+        <p class="hero-sub">I'm Shyam, having an active spirit to learn and detail-oriented Gen AI Engineer at leveraging cutting-edge tools and techniques to drive creative model testing and deployment where facing the stoplimits and solving any challenging problems.<br><br>
+Beyond technical skills, I am committed to continuous learning and thrive in collaborative environments where innovation meets impact</p>
+
+        <div class="hero-actions">
+          <a class="cta-btn" href="#contact">Work with me</a>
+          <a style="padding:10px 12px;font-weight:700;color:#073642;text-decoration:none" href="#about">Download CV</a>
+        </div>
+
+        <div class="info-row" style="margin-top:18px">
+          <div class="chip">Web Dev</div>
+          <div class="chip">Design Thinking</div>
+          <div class="chip">Public Speaking</div>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-hidden="true">
+        <div class="hero-art" role="img" aria-label="Miami illustration">
+          <!-- Simple inline art-deco beach illustration (SVG) -->
+          <svg width="100%" height="100%" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sea" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#15d1c3"/>
+                <stop offset="1" stop-color="#ffd27a"/>
+              </linearGradient>
+              <linearGradient id="sun" x1="0" x2="1"><stop offset="0" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd27a"/></linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#sea)"/>
+            <g transform="translate(40,20)">
+              <ellipse cx="350" cy="100" rx="60" ry="60" fill="url(#sun)" opacity="0.95"/>
+              <rect x="0" y="200" width="560" height="100" rx="20" fill="#ffd9b1"/>
+              <!-- simplified art-deco building -->
+              <g transform="translate(20,60)">
+                <rect x="20" y="60" width="140" height="90" rx="6" fill="#ff9aa2"/>
+                <rect x="90" y="30" width="50" height="120" rx="6" fill="#ffb86b"/>
+                <rect x="30" y="70" width="40" height="20" fill="#fff3d1" opacity="0.6"/>
+                <rect x="70" y="70" width="40" height="20" fill="#fff3d1" opacity="0.6"/>
+              </g>
+              <!-- umbrella -->
+              <g transform="translate(360,150)">
+                <ellipse cx="0" cy="28" rx="80" ry="20" fill="#ff7bb3" opacity="0.95"/>
+                <path d="M-60 20 C-40 -10, 40 -10, 60 20 L60 22 L-60 22 Z" fill="#fff3d1" opacity="0.95" transform="translate(0,-14)"/>
+                <rect x="-2" y="22" width="4" height="70" fill="#073642"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <div class="info-row">
+          <div style="flex:1">
+            <div style="font-weight:800">Shyam S</div>
+            <div style="font-size:13px;color:#234">GenAI & ML</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-weight:800">3+</div>
+            <div style="font-size:13px;color:#234">Months Exp</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-label="about">
+      <h2 class="section-heading">About Me</h2>
+      <p class="lead">Having passion for transforming complex data into actionable insights. With expertise in statistical analysis, machine learning, and data visualization,etc,. I mainly work on the datasets and gen-models.</p>
+
+      <div class="about-grid">
+        <div class="avatar">Photo</div>
+        <div class="about-text">
+          <p style="margin-bottom:12px">Basically I'm silent type person everywhere but don't judge by my silentness. I'm always listening, observing and keep gathering data around me and predicts what happens at next. Without any tension around in my head i'm always be cool and calm also while in a storm</p>
+          <p style="margin-bottom:12px"><strong>Skills:</strong> HTML5 • CSS3 • Data Science • Machine Learning • Deep Learning • Langchain</p>
+          <div style="display:flex;gap:10px">
+            <a class="cta-btn" href="#contact">Hire me</a>
+            <a style="padding:10px 12px;border-radius:999px;border:1px solid rgba(6,20,30,0.06);text-decoration:none;font-weight:700;color:#073642" href="#portfolio">My Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-label="services">
+      <h2 class="section-heading">Services</h2>
+      <p class="lead">Design & development services tailored for startups, agencies and personal brands.</p>
+      <div class="services">
+        <div class="service-card">
+          <h4>Web Designing</h4>
+          <p>Responsive, performance boosting and eye-catching website designing</p>
+        </div>
+        <div class="service-card">
+          <h4>Digital Marketing</h4>
+          <p>Boost your view statistics and grow your business</p>
+        </div>
+        <div class="service-card">
+          <h4>Business Consultancy</h4>
+          <p>Get Advice from our experts before get into a business</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" aria-label="portfolio">
+      <h2 class="section-heading">Projects</h2>
+      <p class="lead">Selected projects — click to preview (replace with your screenshots).</p>
+      <div class="portfolio-grid">
+        <div class="port-item">Titanic Dataset</div>
+        <div class="port-item">Image Classification System</div>
+        <div class="port-item">Text-to-Image & Image-to-Text</div>
+        <div class="port-item">Housing Price Predictor</div>
+        <div class="port-item">Sentiment Analysis</div>
+        <div class="port-item">Simple Notepad app by Flask</div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <!--<section id="testimonials" aria-label="testimonials">
+      <h2 class="section-heading">My Hobbs and Interests</h2>
+      <div class="testimonials">
+        <div class="test">
+          <p>"They delivered our site on time with excellent quality — very professional."</p>
+          <div style="margin-top:12px;font-weight:700">— James Fernando</div>
+        </div>
+        <div class="test">
+          <p>"Creative direction and implementation were spot on. Our conversion increased."</p>
+          <div style="margin-top:12px;font-weight:700">— Venanda Mercy</div>
+        </div>
+      </div>
+    </section>-->
+
+    <!-- BLOG -->
+    <section id="blog" aria-label="blog">
+      <h2 class="section-heading">Blogs</h2>
+      <p class="lead">Short updates and case studies.</p>
+      <div class="blog-grid">
+        <article class="post"><strong>Case Study — Cloud Computing</strong><p style="margin-top:8px;font-size:13px;color:#345">Apr 21, 2025 — Learnings from an art-deco redesign.</p></article>
+        <article class="post"><strong>Chess: A War on a Board</strong><p style="margin-top:8px;font-size:13px;color:#345">Mar 10, 2025 — Fight or Die? Really similar to Game of Thrones</p></article>
+        <article class="post"><strong>30 Day Weight-loss challenge</strong><p style="margin-top:8px;font-size:13px;color:#345">Jan 3, 2025 — Build Consistency and Deep Discipline.</p></article>
+        <article class="post"><strong>Language of Money</strong><p style="margin-top:8px;font-size:13px;color:#345">Jan 3, 2025 — Speed without sacrificing style.</p></article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="contact">
+      <h2 class="section-heading">Contact</h2>
+      <p class="lead">Want to build something together? Send a message.</p>
+
+      <div class="contact-grid">
+        <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent (demo)');" style="padding:12px;background:rgba(255,255,255,0.85);border-radius:12px;box-shadow:0 10px 30px rgba(6,20,30,0.06)">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input id="name" required placeholder="Your name" />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="you@domain.com" />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" placeholder="What are you still thinking?..." required></textarea>
+          </div>
+          <button class="primary" type="submit">Send Message</button>
+        </form>
+
+        <aside style="padding:18px;background:linear-gradient(180deg,rgba(255,255,255,0.9),#fff);border-radius:12px;">
+          <h4 style="margin-bottom:8px">Get in touch</h4>
+          <p style="margin-bottom:12px">Email: <strong>ss0600381@gmail.com</strong></p>
+          <p style="margin-bottom:12px">Icelab Studios, India</p>
+          <div style="margin-top:8px">
+            <a style="display:inline-block;padding:10px 12px;border-radius:999px;background:linear-gradient(90deg,var(--miami-cyan),var(--miami-teal));color:white;text-decoration:none;font-weight:700" href="mailto:hello@miamivibes.dev">Email Me</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>© <strong>Miami Vibes</strong> — Designed by Icelab Studi☀️s</div>
+      <div style="opacity:.9">
+        <ul>
+          <li><a href="">Home • </a><a href="">Blog • </a><a href="">Pricing • </a><a href="">About • </a><a href="">FAQ •</a><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Decorative palms -->
+  <!-- <img class="palm-left" src="data:image/svg+xml;utf8,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 400' width='240'>
+      <g fill='%23082421' opacity='0.9'><path d='M110 10 C80 50 20 60 20 140 C20 220 120 270 140 210 C160 150 170 80 110 10 Z'/></g>
+    </svg>" alt="" />
+  <img class="palm-right" src="data:image/svg+xml;utf8,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 400' width='260'>
+      <g fill='%23082421' opacity='0.9'><path d='M90 10 C120 50 180 60 180 140 C180 220 80 270 60 210 C40 150 30 80 90 10 Z'/></g>
+    </svg>" alt="" /> -->
+</body>
+</html>
